@@ -1,0 +1,13 @@
+local confirm = game.Players.LocalPlayer.PlayerGui.ElixirFEHub.Frame.Key.Confirm
+local textbox = game.Players.LocalPlayer.PlayerGui.ElixirFEHub.Frame.Key.Key
+local sidebar = game.Players.LocalPlayer.PlayerGui.ElixirFEHub.Frame.Sidebar
+local tabsholder = game.Players.LocalPlayer.PlayerGui.ElixirFEHub.Frame.TabsHolder
+local keyframe = game.Players.LocalPlayer.PlayerGui.ElixirFEHub.Frame.Key
+
+confirm.MouseButton1Down:Connect(function()
+	if textbox.Text == "ElixirFETestKey" then
+		sidebar.Visible = true
+		tabsholder.Visible = true
+		keyframe.Visible = false
+	end
+end)
